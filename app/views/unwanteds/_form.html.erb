@@ -1,0 +1,31 @@
+<%= form_for(unwanted) do |f| %>
+  <% if unwanted.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(unwanted.errors.count, "error") %> prohibited this unwanted from being saved:</h2>
+
+      <ul>
+      <% unwanted.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+  </div>
+
+  <div class="field">
+    <%= f.label :description %>
+    <%= f.text_area :description %>
+  </div>
+
+    <div class="field">
+      <%= f.file_field :image %>
+    </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

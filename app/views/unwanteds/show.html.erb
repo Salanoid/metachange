@@ -1,0 +1,18 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @unwanted.title %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @unwanted.description %>
+</p>
+
+<p>
+  <%= image_tag @unwanted.image_url.to_s %>
+</p>
+
+<%= link_to 'Edit', edit_unwanted_path(@unwanted) %> |
+<%= link_to 'Back', unwanteds_path %>

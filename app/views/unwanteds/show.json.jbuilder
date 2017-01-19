@@ -1,0 +1,1 @@
+json.partial! "unwanteds/unwanted", unwanted: @unwanted

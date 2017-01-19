@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Unwanteds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Description</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @unwanteds.each do |unwanted| %>
+      <tr>
+        <td><%= unwanted.title %></td>
+        <td><%= unwanted.description %></td>
+        <%= image_tag unwanted.image_url(:thumb).to_s %>
+        <td><%= link_to 'Show', unwanted %></td>
+        <td><%= link_to 'Edit', edit_unwanted_path(unwanted) %></td>
+        <td><%= link_to 'Destroy', unwanted, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Unwanted', new_unwanted_path %>
