@@ -5,14 +5,14 @@
     <%= unwanted.title %> <br>
     <%= image_tag unwanted.image_url(:thumb).to_s %> 
     <%= link_to 'Show', unwanted %>
-    <%= link_to 'Edit', edit_unwanted_path(unwanted) %>
+    <%= link_to 'Edit', edit_unwanted_path(unwanted) %> 
+    <br>
   <% end %>
 
 
 <br>
 <br>
 <br>
-<br>
-<br>
+
 
 <%= link_to 'New Unwanted', new_unwanted_path %>
