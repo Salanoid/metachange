@@ -1,6 +1,5 @@
-<h1>Editing Unwanted</h1>
-
-<%= render 'form', unwanted: @unwanted %>
-
-<%= link_to 'Show', @unwanted %> |
-<%= link_to 'Back', unwanteds_path %>
+<%- model_class = Unwanted -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => model_class.model_name.human.titleize %></h1>
+</div>
+<%= render :partial => 'form' %>

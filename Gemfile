@@ -8,6 +8,7 @@ end
 gem 'devise'
 gem 'carrierwave'
 gem 'mini_magick'
+gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
