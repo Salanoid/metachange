@@ -30,11 +30,10 @@
     <%=f.error_span(:description) %>
   </div>
   <div class="form-group">
-    <%= f.label :image, :class => 'control-label col-lg-2' %>
     <div class="col-lg-10">
-      <%= f.text_field :image, :class => 'form-control' %>
+      <%= f.file_field :image %>
+      <%=f.error_span(:image) %>
     </div>
-    <%=f.error_span(:image) %>
   </div>
 
   <div class="form-group">
