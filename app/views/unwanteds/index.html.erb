@@ -4,7 +4,7 @@
   <%= unwanted.description %>  
   <%= image_tag unwanted.image_url(:thumb).to_s%>
   <%= date = unwanted.created_at
-      date.strftime("%d/%m") %>
+      date.strftime("%y-%m-%d") %>
   <%= link_to t('.show', :default => t("helpers.links.show")),
               unwanted_path(unwanted), :class => 'btn btn-default btn-xs' %> 
   <!-- if current.user is user that created unwanted -->
