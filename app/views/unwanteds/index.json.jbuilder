@@ -1,0 +1,1 @@
+json.array! @unwanteds, partial: 'unwanteds/unwanted', as: :unwanted
