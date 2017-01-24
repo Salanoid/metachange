@@ -10,14 +10,6 @@
       <br>
   <%= link_to t('.show', :default => t("helpers.links.show")),
               unwanted_path(unwanted), :class => 'btn btn-default btn-xs' %> 
-  <!-- if current.user is user that created unwanted -->
-  <%= link_to t('.edit', :default => t("helpers.links.edit")),
-                edit_unwanted_path(unwanted), :class => 'btn btn-default btn-xs' %>
-  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
-              unwanted_path(unwanted),
-              :method => :delete,
-              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-              :class => 'btn btn-xs btn-danger' %>
   <br>
   <br>
   <br>
