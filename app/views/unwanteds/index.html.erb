@@ -1,6 +1,3 @@
-<h1> Add new Unwanteds </h1>
-<hr>
-
 <br>
 <% @unwanteds.each do |unwanted| %>
   <h2> <%= unwanted.title %> </h2>
@@ -13,6 +10,7 @@
       <br>
   <%= link_to t('.show', :default => t("helpers.links.show")),
               unwanted_path(unwanted), :class => 'btn btn-default btn-xs' %> 
+  <!-- if current.user is user that created unwanted -->
   <br>
   <br>
   <br>
